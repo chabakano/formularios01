@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularios</title>
+        <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+
+        <fieldset class="gris">
+
+            <legend class="ja">Datos Personales</legend>
+
+        <table>
+
+            <tr>
+
+                <td><label class="centro" for="nombre">Nombre</label></td>
+                <td><label for="apellidos">Apellidos</label></td>
+                <td><label for="dni">DNI</label></td>
+
+            </tr>
+            <tr>
+                <td><input type="text" name="nombre" placeholder="introduce tu nombre"></td>
+                <td><input type="text" name="apellidos"></td>
+                <td><input type="text" name="dni"></td>
+            </tr>
+        
+            <tr>
+                <td><label for="local">Localidad Nacimiento</label></td>
+                <td><label for="provinciaa">Provincia</label></td>
+                <td><label for="nacimiento">Fecha de Nacimiento</label></td>
+            </tr>
+
+            <tr>
+                <td><input type="text" name="localidad" id="local"></td>
+                <td>
+                    <select name="provincia" id="provinciaa">
+                    <option >-selecciona-</option>
+                    <option >cataluña</option>
+                    <option>jaen</option>
+                    <option>kattegat y mitgard</option>
+                </select>
+                </td>
+                <td>
+                    <input type="date" name="Fecha" id="nacimiento">
+                </td>
+            </tr>
+                
+                <tr>
+                    <td colspan="2"><label for="direccion">Direccion</label></td>
+                    <td><label for="postal">Codigo postal</label></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="text" name="direccione" id="direccion" size="39cm"></td>
+                    <td><input type="text" name="post" id="postal"></td>
+                </tr>
+           
+            </table>
+
+        </fieldset>
+
+        <fieldset class="crema">
+
+            <legend class="ja">Forma de Acceso</legend>
+
+    <ul class="noicono">
+        <li><input type="radio" name="forma" value="direct"/>direct </li><br>
+            
+            <ul class="noicono">
+                <li><input type="radio" name="etapa" value="bachillerato">bachymozart</li>
+                <li><input type="radio" name="etapa" value="fp">FP</li>
+                <li><input type="radio" name="etapa" value="jaja">by the face</li>
+            </ul>
+       <br>
+        <li><input type="radio" name="forma" value="prueba">prueba libre</li>
+    </ul>
+        </fieldset>
+        
+        <fieldset class="rojo">
+
+                <legend class="ja">Documentos Adjuntados</legend>
+           <table>
+                <tr>
+                    <td><input type="checkbox" name="doc" value="dni">Fotocopia DNI</td>
+                    <td><input type="checkbox" name="doc" value="cert">Certificado Academico</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                    <input type="checkbox" name="doc" value="otros">Otros documentos(especifique)
+                    <input type="text" name="elotrodocumento">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+    </form>
+    
+</body>
+</html>

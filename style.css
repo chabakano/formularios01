@@ -1,0 +1,33 @@
+body{
+    background-color: teal;
+}
+
+
+legend.ja{
+    color: brown;
+    border: 2px salmon inset;
+    border-right: yellow 2px solid;
+    border-left: yellow 2px solid;
+    padding: 3px;
+    text-align: center;
+    background-color: white;
+}
+
+fieldset.gris{
+    background-color: gray;
+    border: greenyellow 5px solid;
+}
+
+fieldset.crema{
+    background-color:burlywood;
+    border: red 5px solid;
+}
+
+ul.noicono{
+    list-style-type: none;
+}
+
+fieldset.rojo{
+    background-color:tomato;
+    border: black 5px solid;
+}

@@ -18,14 +18,14 @@
 
             <tr>
 
-                <td><label class="centro" for="nombre">Nombre</label></td>
-                <td><label for="apellidos">Apellidos</label></td>
+                <td><label class="centro" for="nom">Nombre</label></td>
+                <td><label for="ape">Apellidos</label></td>
                 <td><label for="dni">DNI</label></td>
 
             </tr>
             <tr>
-                <td><input type="text" name="nombre" placeholder="introduce tu nombre"></td>
-                <td><input type="text" name="apellidos"></td>
+                <td><input type="text" name="nombre" placeholder="introduce tu nombre" id="nom"></td>
+                <td><input type="text" name="apellidos" id="ape"></td>
                 <td><input type="text" name="dni"></td>
             </tr>
         
@@ -99,26 +99,36 @@
 
         <input type="submit" value="enviar solicitud">
 
-        <script type="text/javascript">
-        document.addEventListener("DOMcontentloaded", inicio ,false)
+        <script>
 
             function funcion_pruebacambio() {
             document.getElementById("lol").innerHTML = "reloco";
                 alert ('se ha cambiado algo')
             }
+
+
             function chelo_garciacortes() {
-               switch (rand1){
-                   case 1:
-                       //atributo src
-                
-               }
+            var koko = document.getElementById("nom").value + document.getElementById("ape").value
+            document.getElementById("joseda").value=koko
             }
+
+            function chelosabeminombre() {
+            var koko = document.getElementById("nom").value + document.getElementById("ape").value
+            document.getElementById("myname").value=koko
+            }
+
         </script>
        
-        <p id="lol" class="in">9999999999</p>
+       texto <input type="text" name="luli" id="miguelon">que se repetira en el input de abajo(replica) <br>
+       <input type="text" name="lili" id="joseda" placeholder="venga va macho" onfocus="chelo_garciacortes()">es el repetido
+     
+       <p id="lol" class="in">9999999999</p>
+       <p id="joseluis">77777777777777</p><br><br><br>
 
-        <p id="lal">chelo</p>
-        
+     <br><br><br><hr><br><br>
+
+       <button type="button" onclick="chelosabeminombre()">saber mi nombre completo</button><input type="text" name="minombre" id="myname">
+
     <button type="button" onclick="funcion_pruebacambio()">cambiame</button>
     
     </form>

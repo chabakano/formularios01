@@ -101,8 +101,11 @@
 
         <script>
 
+        
+
             function funcion_pruebacambio() {
-            document.getElementById("lol").innerHTML = "reloco";
+            var koko = document.getElementById("nom").value + document.getElementById("ape").value
+            document.getElementById("lol").innerHTML = koko
                 alert ('se ha cambiado algo')
             }
 
@@ -116,7 +119,7 @@
             var koko = document.getElementById("nom").value + document.getElementById("ape").value
             document.getElementById("myname").value=koko
             }
-
+            
         </script>
        
        texto <input type="text" name="luli" id="miguelon">que se repetira en el input de abajo(replica) <br>
@@ -129,9 +132,11 @@
 
        <button type="button" onclick="chelosabeminombre()">saber mi nombre completo</button><input type="text" name="minombre" id="myname">
 
-    <button type="button" onclick="funcion_pruebacambio()">cambiame</button>
+    <button type="button" onclick="funcion_pruebacambio()">cambiammmme</button><br><br>
+
+    <a href="practicajs1.html" target="_blank"><button type="button">practicajs1</button></a>
     
-    </form>
+
     
 </body>
 </html>

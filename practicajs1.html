@@ -3,22 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">;<link rel="stylesheet" href="style.css">
     <title>prueba1</title>
 </head>
 <body>
-    
+    <label for="botonako">sos un boton</label>
+
+    <button type="button" id="botonako" onclick="fecha()">quiero saber la fecha</button> <br><br>
+
+   <p id="fechon"></p><br><br>
+
+   <button type="button" onclick="cambiartexto1()">si quieres agrandar el descpreciable texto de abajo,click aqui</button>
+
+   <p id="textopequeño">soy un texto pequeño e insignificante</p>
+
+   <br><br><hr style="border-color: aqua;border-width: 10px;"><br>
+
+   <p class="moe">Bienvenido a la taberna de Moe</p>
+
+   <p class="moe">quieres una birra?</p><br>
+
+   <img src="/imagenes/moebeer.jpeg" alt="moeofreciendocervecin" height="200" width="200">  
+
+   <label for="edad">vale tio,cuantos tacos tienes?</label>
+
+   <input type="text" name="edod" id="edad">
+
+    <button type="button" onclick="podreono()">comprobar mi fukin edad</button>
+
     <script>
 
         const x = 10
-        const y = 50
+        const y = 50 
         const z = 100
         const total = x + y + z
         const descuento = 50
         const subtotal = total * 50 / 100
         console.log(typeof total);console.log(total);console.log(subtotal)
 
-        function fecha()
+        function fecha() {
+            document.getElementById("fechon").innerHTML = Date()        
+        }
+        function cambiartexto1(){
+            document.getElementById("textopequeño").style.fontSize = "40px"
+        }
+        function podreono(){
+            var permiso = document.getElementById("edad").value;
+           
+
+                if ( permiso => 18 ) {
+            alert ("perfecto tronco,toma tu birra"); }
+                    
+                else { 
+            alert ("fuera de aqui forro menor"); }
+        }
     </script>
 
 </body>

@@ -29,7 +29,13 @@
 
    <input type="text" name="edod" id="edad">
 
-    <button type="button" onclick="podreono()">comprobar mi fukin edad</button>
+    <button type="button" onclick="podreono()">comprobar mi fukin edad</button><br><hr style="border-color: brown; border-width: 10px;">
+
+   <img src="/imagenes/naverym2.png" alt="nave de rick y morty" height="300" width="400"><br><br>
+   
+    <button type="button" id="butto" class="bob">arrancar makina</button>
+    
+    <p class="makina" id="txtmak">la makina esta parada</p>
 
     <script>
 
@@ -48,15 +54,33 @@
             document.getElementById("textopequeño").style.fontSize = "40px"
         }
         function podreono(){
-            var permiso = document.getElementById("edad").value;
+            const permiso = document.getElementById("edad").value;
            
-
-                if ( permiso => 18 ) {
+                if ( permiso >= 18 ) {
             alert ("perfecto tronco,toma tu birra"); }
                     
-                else { 
+                else {
             alert ("fuera de aqui forro menor"); }
         }
+        /*MAQUINA START/STOP*/
+        const butt = document.querySelector(".bob");console.log(butt);
+        const txt = document.querySelector(".makina");console.log(txt);
+        
+            butt.addEventListener("click",updatebutt)
+
+        function updatebutt() {
+            if (butt.textContent === "arrancar makina") {
+                butt.textContent = "parar makina";
+                txt.textContent = "la makina esta en marcha!";
+            }
+            else {
+                butt.textContent = "arrancar makina";
+                txt.textContent = "la maquina esta parada"
+            }
+        }
+        //prueba01//
+
+        
     </script>
 
 </body>

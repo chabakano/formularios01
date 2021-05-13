@@ -1,5 +1,6 @@
 body{
-    background-color: teal;
+    background-image:url(/imagenes/homsad5.jpeg);
+    
 }
 
 
@@ -43,4 +44,19 @@ p.on{
 .moe{
     color: brown;
     font-size: 70px;
+}
+p.makina{
+    color: chartreuse;
+    font-size: 30px;
+    border-color: darkblue;border-width: 20px;
+}
+
+button.bob{
+    color: darkorchid;
+    font-size: 20px;
+}
+
+div.homie{
+    text-align: center;
+    display: block;
 }

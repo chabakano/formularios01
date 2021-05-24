@@ -41,9 +41,11 @@
     
     <p class="moe">sad homer</p>
 
-    <button type="button" id="butta">happy homer</button><br><br><br><br>
+    <button type="button" id="butta" onclick="bartfuncion()">happy homer</button><br><br><br><br>
 
-    <img src="/imagenes/homsad6.jpeg" alt="homiesad" id="homie1">
+    <img src="/imagenes/homsad6.jpeg" alt="homiesad" id="homie1"><br><br>
+
+    <button style="button" id="99">adios homie</button>
 
     </div>
 
@@ -89,13 +91,30 @@
             }
         }
         //prueba01//
-        const bart = document.getElementById("butta").addEventListener("click",bartfuncion)
-        const homiehappy = getelement 
+        //const bart = document.getElementById("butta")
+        
+      //  bart.addEventListener("click",bartfuncion)
+
+        const homiehappy = "aqui va una imagen"                //DOCUMENTACION DE INNER
         
         function bartfuncion() {
-                document.getElementById("homie1")
-            }
+                document.getElementById("homie1").innerHTML = homiehappy;
+        }
 
+        const col = document.getElementById("99")
+            col.addEventListener("click",ocultar)
+
+        function ocultar(){
+            document.getElementById("homie1").style.display="none";
+        }
+        var yousef = "you";var Yousef = "migi";console.log(yousef);console.log(Yousef)
+
+        var p = 10; var pp = 4;console.log(p % pp) // retornar el resto
+        var e = 100; var ee = 3;console.log(e ** ee) //retorna valor exponenciado
+        var k = 200; var kk = 3;console.log(Math.pow(k,kk)) //retorna valor exponenciado pero con otro metodo
+        let a = 500; var aa = 1000;console.log((a + aa) * 10) //gracias a los parentesis se pueden ordenar las operaciones
+                                                               //sin ellos las preferencias siguen las reglas clasicas
+         
     </script>
 
 </body>

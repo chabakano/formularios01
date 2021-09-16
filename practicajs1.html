@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -45,7 +45,10 @@
 
     <img src="/imagenes/homsad6.jpeg" alt="homiesad" id="homie1"><br><br>
 
-    <button style="button" id="99">adios homie</button>
+    <button style="button" id="99">adios homie</button><br><br>
+
+    <p>introduce un numero y comprobaremos si es par o impar</p><br><br> <input type="text" id="parroimpar"><br>    
+    <button type="button" onclick="paroimpar()">comprobar</button>
 
     </div>
 
@@ -86,10 +89,10 @@
                 txt.textContent = "la makina esta en marcha!";
             }
             else {
-                butt.textContent = "arrancar makina";
                 txt.textContent = "la maquina esta parada";
             }
         }
+        
         //prueba01//
         //const bart = document.getElementById("butta")
         
@@ -109,13 +112,24 @@
         }
         var yousef = "you";var Yousef = "migi";console.log(yousef);console.log(Yousef)
 
-        var p = 10; var pp = 4;console.log(p % pp) // retornar el resto
+        var p = 50; var pp = 9;console.log(p % pp) // retornar el resto
         var e = 100; var ee = 3;console.log(e ** ee) //retorna valor exponenciado
         var k = 200; var kk = 3;console.log(Math.pow(k,kk)) //retorna valor exponenciado pero con otro metodo
         let a = 500; var aa = 1000;console.log((a + aa) * 10) //gracias a los parentesis se pueden ordenar las operaciones
                                                                //sin ellos las preferencias siguen las reglas clasicas
-         
-    </script>
+         const PAROIMPAR = document.getElementById("paroim").value;console.log(PAROIMPAR) 
+        
+         function paroimpar(){
+             var definidor = document.getElementById("parroimpar").value;console.log(definidor)
+         if (definidor % 2 == 0) {
+             alert ("este numero es par");
+         }
+         else {
+             alert ("este numero es impar");
+         }
+            }
+            
+   </script>
 
 </body>
 </html>
